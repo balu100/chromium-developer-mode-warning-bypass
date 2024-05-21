@@ -8,7 +8,7 @@ By editing the Preferences file of your Edge browser, you can prevent the develo
 
 ## Instructions
 
-0. **Close all processes of the browser:**
+0. **Close all browser processes:**
 
    Open command line as admin and run the following command:
    `TaskKill /im "msedge.exe" /f`
