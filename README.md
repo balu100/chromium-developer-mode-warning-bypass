@@ -8,12 +8,17 @@ By editing the Preferences file of your Edge browser, you can prevent the develo
 
 ## Instructions
 
-1. **Locate the Preferences File:**
+0. **Close all processes of the browser:**
+
+   Open command line as admin and run the following command:
+   `TaskKill /im "msedge.exe" /f`
+
+2. **Locate the Preferences File:**
    
    Open the file located at:
    `C:\Users\Your_User\AppData\Local\Microsoft\Edge\User Data\Default\Preferences`
 
-2. **Edit the Preferences File:**
+3. **Edit the Preferences File:**
 
    - Search for the following JSON entry:
      ```json
@@ -24,8 +29,9 @@ By editing the Preferences file of your Edge browser, you can prevent the develo
      "dev_mode_warning_snooze_end_time": "XXXXXXXXXXXXXXXXX",
      ```
 
-3. **Set the Timestamp:**
+4. **Set the Timestamp:**
 
    Replace `XXXXXXXXXXXXXXXXX` with a timestamp value. For example:
    ```json
    {"allow_chrome_webstore": true, "dev_mode_warning_snooze_end_time": "99999999999000000", "developer_mode": true}
+   
